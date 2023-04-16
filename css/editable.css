@@ -1,0 +1,147 @@
+form {
+    margin: 0;
+}
+input {
+    max-width: 100%;
+}
+.no-display {
+    display: none;
+}
+
+.red, .red a {
+    font-weight: bold;
+    color: #d14 !important;
+}
+.blue, .blue a {
+    font-weight: bold;
+    color: #0055cc !important;
+}
+.toggle-red, .toggle-red a {
+    color: #ffffff !important;
+    background-color: #da4f49 !important;
+    background-image: -moz-linear-gradient(top, #bd362f, #ee5f5b) !important;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bd362f), to(#ee5f5b)) !important;
+    background-image: -webkit-linear-gradient(top, #bd362f, #ee5f5b) !important;
+    background-image: -o-linear-gradient(top, #bd362f, #ee5f5b) !important;
+    background-image: linear-gradient(to bottom, #bd362f, #ee5f5b) !important;
+}
+
+form.editable-toggle {
+    margin: 0;
+}
+
+.fade-medium, *[class*=' fade-medium-'], *[class^='fade-medium-'] {
+    opacity: 0.5 !important;
+}
+
+.image-link, .image-link:hover, .image-link:focus {
+    text-decoration: none;
+}
+
+.editable-click.editable-image, 
+.editable-click.editable-image:hover, 
+.editable-click.editable-image:focus, 
+.editable-click.editable-toggle, 
+.editable-click.editable-toggle:hover,
+.editable-click.editable-toggle:focus {
+    position: relative;
+    display: inline-block;
+    border-bottom-color: transparent;
+    min-width: 20px;
+    min-height: 20px;
+}
+.editable-image-wrapper {
+    display: inline-block;
+    position: relative;    
+}
+.editable-image-wrapper img {
+	width:226px;	
+}	
+.editable-image-wrapper form {
+    position: relative;
+    z-index: 10;
+}
+.editable-image .fa-upload {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: solid 1px rgba(128,128,128,.15);
+    border-right: none;
+    border-bottom: none;
+    border-radius: 3px 0 0 0;
+}
+.editable-image-remove {
+    position: absolute;
+    top: 0;
+    right: -18px;
+    border: solid 1px rgba(128,128,128,.15);
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+}
+.editable-image-remove .fa-times:before {
+    vertical-align: top;
+}
+.editable-image .fa-upload, 
+.editable-image-remove .fa-times:before {
+    padding: 1px 3px;
+}
+.editable-image .fa-upload {
+    background-color: rgba(255,255,255,0.85);
+}
+.editable-image-remove {
+    background-color: white;
+}
+.editable-image-empty {
+    white-space: nowrap;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.editable-menu-add,
+.editable-menu-edit {
+    color: #ccc;
+}
+.editable-menu-add i {
+    display: block;
+    text-align: center;
+    border: dashed 1px #ccc;
+}
+.editable-menu-add:hover,
+.editable-menu-edit:hover {
+    color: #44c;
+    cursor: pointer;
+    /*background-color: rgba(200,200,200,0.2);*/
+}
+.editable-menu-edit {
+    /*position: absolute;
+    background-color: white;
+    right: 0;
+    z-index: 10;*/
+    float: right;    
+}
+/* fix */
+.editable-menu .dropdown-menu > li > a {
+    clear: left /* no right */
+}
+
+.editable-editor {}
+.editable-editor a.editable-click {
+    /*display: block;*/
+    display: inline-block;
+    border: dashed 1px rgba(0,128,192,0.15);
+}
+.editable-editor a.editable-click:hover,
+.editable-editor a.editable-click:focus {
+    border: dashed 1px rgba(0,128,192,0.5);
+}
+.editable-editor .editableform .control-group {
+    white-space: normal;
+}
+.editable-editor .editable-buttons {
+    /*margin-top: 10px;*/
+}
+
+form.editable-switch {
+    display: inline-block;
+}

@@ -1,0 +1,1 @@
+ALTER TABLE `tbl_company` ADD `country` varchar(2);

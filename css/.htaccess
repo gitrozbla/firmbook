@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteBase /
+
+<Files "creators.css">
+Order Allow,Deny
+Deny from all
+</Files>
+
+<Files "editable.css">
+Order Allow,Deny
+Deny from all
+</Files>
+
+<Files "main.css">
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Disable directory browsing
+Options All -Indexes

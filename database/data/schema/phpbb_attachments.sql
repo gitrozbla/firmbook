@@ -1,0 +1,23 @@
+CREATE TABLE `phpbb_attachments` (
+  `attach_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `post_msg_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `topic_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `in_message` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `poster_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `is_orphan` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `physical_filename` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `real_filename` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `download_count` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `attach_comment` text COLLATE utf8_bin NOT NULL,
+  `extension` varchar(100) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `mimetype` varchar(100) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `filesize` int(20) unsigned NOT NULL DEFAULT '0',
+  `filetime` int(11) unsigned NOT NULL DEFAULT '0',
+  `thumbnail` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`attach_id`),
+  KEY `filetime` (`filetime`),
+  KEY `post_msg_id` (`post_msg_id`),
+  KEY `topic_id` (`topic_id`),
+  KEY `poster_id` (`poster_id`),
+  KEY `is_orphan` (`is_orphan`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin

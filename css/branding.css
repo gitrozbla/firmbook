@@ -1,0 +1,23 @@
+@define {
+    theme-color: #00548f;
+    
+    theme-selection-color: hsl-adjust( $(theme-color) 0 0 70);
+    
+    theme-navbar-background-color: hsl-adjust( $(theme-color) 0 -10 68);
+    theme-navbar-hover-background-color: rgba(255,255,255,0.38);//hsl-adjust( $(theme-color) 0 0 70);
+    theme-navbar-color: hsl-adjust( $(theme-color) 0 0 -5);
+    theme-navbar-hover-color: hsl-adjust( $(theme-color) 0 -5 -20);
+    
+    theme-button-background-color: hsl-adjust( $(theme-color) 0 0 -5);
+    theme-button-hover-background-color: hsl-adjust( $(theme-color) 0 0 5);
+    theme-button-border-color: hsl-adjust( $(theme-color) 0 -5 -15);
+    theme-button-color: hsl-adjust( $(theme-color) 0 -5 70);
+    theme-button-hover-color: hsl-adjust( $(theme-color) 0 -5 60);
+    
+    theme-link-color: hsl-adjust( $(theme-color) 0 0 0);
+    theme-link-hover-color: hsl-adjust( $(theme-color) 0 -5 -10);
+    
+    theme-promoted-empty-text: hsl-adjust( $(theme-color) 0 -15 15);
+    theme-promoted-empty-background: hsl-adjust( $(theme-color) 0 -10 70);
+    theme-promoted-empty-border: hsl-adjust( $(theme-color) 0 -10 60);
+}

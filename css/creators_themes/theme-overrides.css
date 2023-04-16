@@ -1,0 +1,252 @@
+/**
+ * Default stylesheet for the bootstrap-wysihtml5 editor.
+ * See the TbHtml5Editor widget for details.
+ */
+.wysiwyg-color-black {color: black;}
+.wysiwyg-color-silver {color: silver;}
+.wysiwyg-color-gray {color: gray;}
+.wysiwyg-color-white {color: white;}
+.wysiwyg-color-maroon {color: maroon;}
+.wysiwyg-color-red {color: red;}
+.wysiwyg-color-purple {color: purple;}
+.wysiwyg-color-fuchsia {color: fuchsia;}
+.wysiwyg-color-green {color: green;}
+.wysiwyg-color-lime {color: lime;}
+.wysiwyg-color-olive {color: olive;}
+.wysiwyg-color-yellow {color: yellow;}
+.wysiwyg-color-navy {color: navy;}
+.wysiwyg-color-blue {color: blue;}
+.wysiwyg-color-teal {color: teal;}
+.wysiwyg-color-aqua {color: aqua;}
+.wysiwyg-color-orange {color: orange;}
+
+html.no-responsive,
+html.no-responsive body {
+    min-width: 940px;
+}
+
+.faded {
+    opacity: 0.38;
+}
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.thumbnail,
+.img-polaroid {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 10px 10px 0;
+    max-width: 100%;
+}
+
+
+#header {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+#header .container {
+    height: 100%;
+}
+#header .table {
+    display: table;
+    height: 100%;
+    margin: 0;
+}
+#header .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 30px;
+}
+#header-wrapper {
+    width: 100%;
+    height: 100%;
+}
+#header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+#header .header-logo {
+    max-height: 80%;
+    margin: 10px;
+}
+
+#content {
+    margin: 10px 0;
+}
+
+#footer {
+    margin-bottom: 30px;
+}
+
+
+/* PAGES */
+/* about */
+.page-type-about .company-data {
+	 max-width: 600px;
+}
+/* products, services, news */
+.page-type-products #product-list ul,
+.page-type-services #service-list ul,
+.page-type-news #news-list ul {
+    margin: 0;
+}
+.page-type-products #product-list li,
+.page-type-services #service-list li,
+.page-type-news #news-list li {
+    list-style-type: none;
+    border-bottom: solid 1px rgba(0,0,0 ,0.15);
+    padding: 10px 0;
+}
+.page-type-products #product-list .column-thumbnail,
+.page-type-services #service-list .column-thumbnail,
+.page-type-news #news-list .column-thumbnail {
+    width: 15%;
+    margin-right: 10px;
+}
+.page-type-products #product-list .column-title,
+.page-type-services #service-list .column-title,
+.page-type-news #news-list .column-title {
+    width: 80%;
+}
+.page-type-products #product-list .column-title .label,
+.page-type-services #service-list .column-title .label,
+.page-type-news #news-list .column-title .label {
+    margin-bottom: 10px;
+}
+/* contact */
+.page-type-contact .page-type-content dt,
+.page-type-contact .page-type-content dd {
+    float: left;
+    margin: 0 0 10px;
+    padding: 0;
+}
+.page-type-contact .page-type-content dt {
+    width: 150px;
+    clear: left;
+}
+.page-type-contact .registers-link {
+    margin-left: 15px;
+    margin-right: 5px;
+    text-decoration: underline;
+}
+
+.social-icons {
+	margin: 0 15px;
+}
+
+
+.smart-box {
+	border: 1px solid #e9e9e9;
+	background-color: white;
+	margin: 0px 0 20px 0;
+	-moz-box-shadow:0 1px 7px #e9e9e9;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	padding: 20px;
+	display:block;
+
+}
+.smart-box.title h1 {
+	font-family: "Arial Narrow", Arial;
+	color: #555555;
+	font-size: 24px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+.smart-box.title h1 span {
+	/*font-size: 12px;*/
+	float: right;
+}
+.smart-box div.txt {
+	display:inline-block;
+	margin-top: 20px;
+}
+/*.smart-box p {
+	display:block;
+	margin-top: 20px;
+}*/
+.smart-box .title {
+	display:block;
+	font-family: "Arial Narrow", Arial;
+	color: #555555;
+	font-size: 24px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+.smart-box .subtitle {
+	display:block;
+	font-family: "Arial Narrow", Arial;
+	color: #777;
+	font-size: 20px;
+	border-bottom: 1px solid #eee;
+	height: 20px;
+	margin-bottom: 20px;
+}
+.smart-box .subtitle span {
+	display:inline-block;
+	background-color: #fff;
+	margin-top: 5px;
+	padding-right: 10px;
+}
+.details {
+	display:block;
+	margin-bottom: 10px;
+	margin-left: 13px;
+}
+.detail-row {
+	display:block;
+}
+.detail-label {
+	display:inline-block;
+	width: 150px;
+	font-size: 12px;
+}
+.detail-value {
+	font-family: "Arial Narrow", Arial;
+}
+.payment-text {
+	display: inline-block;
+	line-height: 32px;
+	font-weight: bold;
+}
+
+.creators-table td,
+.creators-table th {
+	background: transparent !important;
+	padding: 10px 20px;
+	border: none;
+}
+.creators-table th {
+	border-right: solid 1px #dddddd;
+}
+
+
+/* LAYOUTS */
+/* Layout 2 */
+body.layout-2 #header {
+    margin-top: 30px;
+}
+body.layout-2 #footer {
+    margin-bottom: 50px;
+}
+body.layout-2 .main-menu {
+    margin-top: 10px;
+}
+body.layout-2 .footer-menu {
+    text-align: center;
+}
+body.layout-2 .footer-menu li {
+    display: inline-block;
+    float: none;
+}
+body.layout-2 .footer-text {
+    float: left;
+    width: 60%;
+}

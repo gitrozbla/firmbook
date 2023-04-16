@@ -1,0 +1,23 @@
+CREATE TABLE `tbl_service` (
+  `item_id` int(11) NOT NULL,
+  `code` varchar(64) NOT NULL DEFAULT '',
+  `company_id` int(11) DEFAULT NULL,
+  `short_description` text,
+  `signature` varchar(50) DEFAULT NULL,
+  `youtube_url` varchar(100) DEFAULT NULL,
+  `price` decimal(10,2) DEFAULT NULL,
+  `currency_id` int(10) unsigned DEFAULT NULL,
+  `unit_id` int(10) unsigned DEFAULT NULL,
+  `promotion_price` decimal(10,2) DEFAULT NULL,
+  `promotion_expire` date DEFAULT NULL,
+  `promotion` smallint(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`item_id`,`code`),
+  UNIQUE KEY `item_id` (`item_id`),
+  KEY `company_id` (`company_id`),
+  KEY `currency_id` (`currency_id`),
+  KEY `unit_id` (`unit_id`),
+  CONSTRAINT `tbl_service_ibfk_1` FOREIGN KEY (`company_id`) REFERENCES `tbl_company` (`item_id`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `tbl_service_ibfk_2` FOREIGN KEY (`item_id`) REFERENCES `tbl_item` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `tbl_service_ibfk_3` FOREIGN KEY (`currency_id`) REFERENCES `tbl_dictionary` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `tbl_service_ibfk_4` FOREIGN KEY (`unit_id`) REFERENCES `tbl_dictionary` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

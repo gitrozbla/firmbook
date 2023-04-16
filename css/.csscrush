@@ -1,0 +1,78 @@
+{
+    "creators.crush.css": {
+        "imports": [],
+        "datem_sum": 1635857123,
+        "options": {
+            "minify": true,
+            "cache": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "vars": [],
+            "context": null,
+            "output_file": null,
+            "output_dir": null,
+            "asset_dir": null,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "plugins": null,
+            "settings": [],
+            "stat_dump": false,
+            "source_map": false,
+            "newlines": "use-platform"
+        }
+    },
+    "main.crush.css": {
+        "imports": [
+            "branding.css",
+            "slider.css",
+            "landing.css"
+        ],
+        "datem_sum": 6724479519,
+        "options": {
+            "minify": true,
+            "cache": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "vars": [],
+            "context": null,
+            "output_file": null,
+            "output_dir": null,
+            "asset_dir": null,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "plugins": null,
+            "settings": [],
+            "stat_dump": false,
+            "source_map": false,
+            "newlines": "use-platform"
+        }
+    },
+    "editable.crush.css": {
+        "imports": [],
+        "datem_sum": 1567012874,
+        "options": {
+            "minify": true,
+            "cache": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "vars": [],
+            "context": null,
+            "output_file": null,
+            "output_dir": null,
+            "asset_dir": null,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "plugins": null,
+            "settings": [],
+            "stat_dump": false,
+            "source_map": false,
+            "newlines": "use-platform"
+        }
+    }
+}

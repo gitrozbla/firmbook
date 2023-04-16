@@ -1,0 +1,20 @@
+CREATE TABLE `tbl_ad_order` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `box_id` int(10) unsigned DEFAULT NULL,
+  `period` int(11) NOT NULL,
+  `price` decimal(6,2) DEFAULT '0.00',
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `date_paid` timestamp NULL DEFAULT NULL,
+  `paid` smallint(6) NOT NULL DEFAULT '0',
+  `modified` timestamp NULL DEFAULT NULL,
+  `status` smallint(6) NOT NULL DEFAULT '0',
+  `t_id` text,
+  `t_status` smallint(6) NOT NULL DEFAULT '0',
+  `t_date` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `tbl_ad_order_ibfk_1` (`user_id`),
+  KEY `tbl_ad_order_ibfk_2` (`box_id`),
+  CONSTRAINT `tbl_ad_order_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `tbl_user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `tbl_ad_order_ibfk_2` FOREIGN KEY (`box_id`) REFERENCES `tbl_ad_box` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

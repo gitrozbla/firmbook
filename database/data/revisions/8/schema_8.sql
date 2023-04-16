@@ -1,0 +1,1 @@
+ALTER TABLE `tbl_package_service` ADD `active` TINYINT(1) NOT NULL DEFAULT '1', ADD INDEX (`active`);
